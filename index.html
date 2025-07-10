@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+    <head>
+        <title>Martin | Portfolio</title>
+
+        <meta property="og:title" content="Martin | Portfolio" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://martinsomer.github.io/" />
+        <meta property="og:description" content="I create modern web experiences from start to finish, employing my knowledge of front-end and back-end development, design, E-commerce, and SEO." />
+        <meta property="og:image" content="media/images/profile.jpg" />
+
+        <meta charset="UTF-8" />
+        <meta name="description" content="I create modern web experiences from start to finish, employing my knowledge of front-end and back-end development, design, E-commerce, and SEO." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="icon" type="image/svg" href="media/icons/favicon.svg" />
+        <link href="styles.css" rel="stylesheet" />
+        <script src="script.js"></script>
+        <script src="lib/tailwindcss-4.1.11.min.js"></script>
+
+        <style type="text/tailwindcss">
+            @theme {
+                --breakpoint-xs: 34rem;
+                --breakpoint-xm: 56rem;
+            }
+        </style>
+    </head>
+    <body class="bg-slate-950 text-orange-50">
+        <header class="sticky top-0 left-0 p-4 bg-slate-900 border-b border-slate-800 z-10">
+            <div class="mx-auto max-w-5xl flex flex-col md:flex-row justify-between gap-4">
+                <a href="./index.html" class="hidden md:block text-2xl font-bold">Portfolio</a>
+                <nav class="flex flex-wrap justify-center md:justify-normal gap-1 md:gap-2 text-sm md:text-base">
+                    <a href="#hero" class="px-2 py-1 h-min rounded-lg border border-transparent hover:border-blue-800">Home</a>
+                    <a href="#about" class="px-2 py-1 h-min rounded-lg border border-transparent hover:border-blue-800">About</a>
+                    <a href="#projects" class="px-2 py-1 h-min rounded-lg border border-transparent hover:border-blue-800">Projects</a>
+                    <a href="#skills" class="px-2 py-1 h-min rounded-lg border border-transparent hover:border-blue-800">Skills</a>
+                    <a href="#resume" class="px-2 py-1 h-min rounded-lg border border-transparent hover:border-blue-800">Resume</a>
+                    <a href="#contact" class="px-2 py-1 h-min rounded-lg border border-transparent hover:border-blue-800">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <main class="mx-auto p-8 max-w-5xl flex flex-col gap-48">
+            <section id="hero" class="flex flex-col md:flex-row gap-8">
+                <div class="w-full flex flex-col justify-center items-center gap-8">
+                    <img src="media/images/profile.jpg" alt="Me"
+                         class="w-full max-w-2xs rounded-full border-2 border-blue-800 hover:scale-102">
+                    <div class="flex items-center gap-4">
+                        <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                        <div>Open to work</div>
+                    </div>
+                </div>
+                <div class="w-full flex flex-col gap-8 justify-center">
+                    <div class="flex flex-col gap-4">
+                        <div class="text-center text-3xl font-bold">
+                            <span>Hi, I'm</span>
+                            <span class="text-4xl text-blue-500">MARTIN</span>
+                        </div>
+                        <div class="text-orange-50/80 text-justify">
+                            I create modern web experiences from start to finish,
+                            employing my knowledge of front-end and back-end development, design, E-commerce, and SEO.
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 text-center text-sm text-orange-50/80 text-nowrap">
+                        <span class="flex-1">Full-stack</span>
+                        <span class="text-blue-500">\</span>
+                        <span class="flex-1">E-commerce</span>
+                        <span class="text-blue-500">\</span>
+                        <span class="flex-1">Magento 2</span>
+                        <span class="text-blue-500">\</span>
+                        <span class="flex-1">Laravel</span>
+                    </div>
+
+                    <div class="flex flex-col xs:flex-row justify-center gap-4 text-sm text-center">
+                        <a href="#projects" class="px-2 py-1 w-full xs:w-min min-w-32 hover:bg-blue-800 rounded-lg border border-blue-800">Projects</a>
+                        <a href="#contact" class="px-2 py-1 w-full xs:w-min min-w-32 hover:bg-blue-800 rounded-lg border border-blue-800">Contact Me</a>
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="flex flex-col gap-12">
+                <div class="text-center text-3xl underline decoration-blue-800 underline-offset-4">About Me</div>
+                <div class="flex flex-col md:flex-row gap-8 text-orange-50/80">
+                    <div class="w-full flex flex-col gap-4 text-justify">
+                        <span>
+                            I have been coding since 2014, starting with simple websites and mobile games.
+                            After high school, I decided to pursue software engineering degree in University.
+                            After finishing my studies and completing my military service,
+                            I started working professionally in web development.
+                        </span>
+                        <span>
+                            Having been a developer in an agile E-commerce environment,
+                            I am familiar with the practices and processes of B2B, planning, and cross-company collaboration.
+                        </span>
+                        <span>
+                            In my free time, apart from developing hobby projects,
+                            I like going on road trips, hikes, swimming, tenting, or playing guitar.
+                        </span>
+                    </div>
+                    <div class="border-b md:border-r border-slate-800"></div>
+                    <div class="flex flex-col justify-center items-center font-bold text-xl md:text-nowrap text-center">
+                        <img src="media/icons/quote.svg" alt="Quote" class="w-36">
+                        <div>My goal is perfection.</div>
+                        <div>Excellence is also tolerable.</div>
+                    </div>
+                </div>
+            </section>
+            <section id="projects" class="flex flex-col gap-12">
+                <div class="text-center text-3xl underline decoration-blue-800 underline-offset-4">Projects</div>
+                <div class="grid grid-cols-1 xs:grid-cols-2 xm:grid-cols-3 gap-8">
+                    <a href="https://ballzy.eu/en/" target="_blank"
+                       class="w-full flex flex-col rounded-lg overflow-hidden border border-slate-800 hover:border-blue-800 cursor-pointer hover:-translate-y-2">
+                        <img src="media/images/ballzy.jpg" alt="Ballzy" class="w-full h-56 object-cover">
+                        <div class="flex-1 p-4 flex flex-col gap-4 bg-slate-900">
+                            <div class="text-xl font-bold text-blue-500">BALLZY</div>
+                            <div class="h-full flex flex-col gap-4 justify-between">
+                                <div class="text-sm md:text-base text-orange-50/80">Lead developer for one of Estonia's largest fashion E-stores</div>
+                                <div class="flex flex-wrap gap-4 text-sm">
+                                    <span class="px-2 py-1 rounded-lg bg-blue-800">Magento 2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://raffle.ballzy.eu/" target="_blank"
+                       class="w-full flex flex-col rounded-lg overflow-hidden border border-slate-800 hover:border-blue-800 cursor-pointer hover:-translate-y-2">
+                        <img src="media/images/raffle.jpg" alt="Ballzy Raffle" class="w-full h-56 object-cover">
+                        <div class="flex-1 p-4 flex flex-col gap-4 bg-slate-900">
+                            <div class="text-xl font-bold text-blue-500">BALLZY Raffle</div>
+                            <div class="h-full flex flex-col gap-4 justify-between">
+                                <div class="text-sm md:text-base text-orange-50/80">Developer for BALLZY's raffle site</div>
+                                <div class="flex flex-wrap gap-4 text-sm">
+                                    <span class="px-2 py-1 rounded-lg bg-blue-800">Laravel</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://skechers.ee/en/" target="_blank"
+                       class="w-full flex flex-col rounded-lg overflow-hidden border border-slate-800 hover:border-blue-800 cursor-pointer hover:-translate-y-2">
+                        <img src="media/images/skechers.jpg" alt="Skechers" class="w-full h-56 object-cover">
+                        <div class="flex-1 p-4 flex flex-col gap-4 bg-slate-900">
+                            <div class="text-xl font-bold text-blue-500">Skechers</div>
+                            <div class="h-full flex flex-col gap-4 justify-between">
+                                <div class="text-sm md:text-base text-orange-50/80">Developer for Skechers E-store in Baltics</div>
+                                <div class="flex flex-wrap gap-4 text-sm">
+                                    <span class="px-2 py-1 rounded-lg bg-blue-800">Magento 2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.miterassa.ee/" target="_blank"
+                       class="w-full flex flex-col rounded-lg overflow-hidden border border-slate-800 hover:border-blue-800 cursor-pointer hover:-translate-y-2">
+                        <img src="media/images/miterassa.jpg" alt="Miterassa" class="w-full h-56 object-cover">
+                        <div class="flex-1 p-4 flex flex-col gap-4 bg-slate-900">
+                            <div class="text-xl font-bold text-blue-500">Miterassa</div>
+                            <div class="h-full flex flex-col gap-4 justify-between">
+                                <div class="text-sm md:text-base text-orange-50/80">Developer for Sony authorized E-store in Estonia</div>
+                                <div class="flex flex-wrap gap-4 text-sm">
+                                    <span class="px-2 py-1 rounded-lg bg-blue-800">Magento 2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="w-full flex flex-col rounded-lg overflow-hidden border border-slate-800 hover:border-blue-800 hover:-translate-y-2">
+                        <img src="media/images/eurodesk.jpg" alt="Eurodesk" class="w-full h-56 object-cover">
+                        <div class="flex-1 p-4 flex flex-col gap-4 bg-slate-900">
+                            <div class="text-xl font-bold text-blue-500">Eurodesk</div>
+                            <div class="h-full flex flex-col gap-4 justify-between">
+                                <div class="text-sm md:text-base text-orange-50/80">Lead developer for select solutions of European youth information network</div>
+                                <div class="flex flex-wrap gap-4 text-sm">
+                                    <span class="px-2 py-1 rounded-lg bg-blue-800">Laravel</span>
+                                    <span class="px-2 py-1 rounded-lg bg-blue-800">ReactJS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full flex flex-col rounded-lg overflow-hidden border border-slate-800 hover:border-blue-800 hover:-translate-y-2">
+                        <div class="w-full h-56 object-cover">
+                            <img src="media/icons/question.svg" alt="Question Mark" class="mx-auto p-4 h-full">
+                        </div>
+                        <div class="flex-1 p-4 flex flex-col gap-4 bg-slate-900">
+                            <div class="text-xl font-bold text-blue-500">Your Project Here</div>
+                            <div class="h-full flex flex-col gap-4 justify-between">
+                                <div class="text-sm md:text-base text-orange-50/80">Bring your project to life with my help!</div>
+                                <a href="#contact" class="px-2 py-1 rounded-lg border border-blue-800 hover:bg-blue-800 text-sm text-center">Contact Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="skills" class="flex flex-col gap-12">
+                <div class="text-center text-3xl underline decoration-blue-800 underline-offset-4">Skills</div>
+                <div class="grid grid-cols-1 xs:grid-cols-2 xm:grid-cols-3 gap-8">
+                    <div class="p-4 w-full flex flex-col justify-between gap-4 rounded-lg overflow-hidden bg-slate-900 border border-slate-800 hover:border-blue-800 hover:-translate-y-2">
+                        <div class="text-center font-bold">Languages</div>
+                        <div class="flex flex-wrap gap-2 text-sm">
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">PHP</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">JavaScript</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">HTML5</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">CSS3</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">Python</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">C</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">Java</span>
+                        </div>
+                    </div>
+                    <div class="p-4 w-full flex flex-col justify-between gap-4 rounded-lg overflow-hidden bg-slate-900 border border-slate-800 hover:border-blue-800 hover:-translate-y-2">
+                        <div class="text-center font-bold">Frameworks & Libraries</div>
+                        <div class="flex flex-wrap gap-2 text-sm">
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">Magento 2</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">Laravel</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">ReactJS</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">TailwindCSS</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">Selenium</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">WebSockets</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">Win32 API</span>
+                        </div>
+                    </div>
+                    <div class="p-4 w-full flex flex-col justify-between gap-4 rounded-lg overflow-hidden bg-slate-900 border border-slate-800 hover:border-blue-800 hover:-translate-y-2">
+                        <div class="text-center font-bold">Tools</div>
+                        <div class="flex flex-wrap gap-2 text-sm">
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">Docker</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">Xdebug</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">Varnish</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">Composer</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">NPM</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">Git</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">Jira</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">Figma</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">Postman</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">x64dbg</span>
+                        </div>
+                    </div>
+                    <div class="p-4 w-full flex flex-col justify-between gap-4 rounded-lg overflow-hidden bg-slate-900 border border-slate-800 hover:border-blue-800 hover:-translate-y-2">
+                        <div class="text-center font-bold">Databases</div>
+                        <div class="flex flex-wrap gap-2 text-sm">
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">MySQL</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">MariaDB</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">SQLite</span>
+                        </div>
+                    </div>
+                    <div class="p-4 w-full flex flex-col justify-between gap-4 rounded-lg overflow-hidden bg-slate-900 border border-slate-800 hover:border-blue-800 hover:-translate-y-2">
+                        <div class="text-center font-bold">Operating Systems</div>
+                        <div class="flex flex-wrap gap-2 text-sm">
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">Arch</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">Debian</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">Windows</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">WSL2</span>
+                        </div>
+                    </div>
+                    <div class="p-4 w-full flex flex-col justify-between gap-4 rounded-lg overflow-hidden bg-slate-900 border border-slate-800 hover:border-blue-800 hover:-translate-y-2">
+                        <div class="text-center font-bold">E-commerce</div>
+                        <div class="flex flex-wrap gap-2 text-sm">
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">ERP</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">Payments</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">Logistics</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">Marketing</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">B2B</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">SEO</span>
+                        </div>
+                    </div>
+                    <div class="p-4 w-full flex flex-col justify-between gap-4 rounded-lg overflow-hidden bg-slate-900 border border-slate-800 hover:border-blue-800 hover:-translate-y-2">
+                        <div class="text-center font-bold">Other</div>
+                        <div class="flex flex-wrap gap-2 text-sm">
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">REST</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">CI/CD</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">Photoshop</span>
+                            <span class="px-2 py-1 rounded-lg bg-blue-800">MS Office</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="resume" class="flex flex-col gap-12">
+                <div class="text-center text-3xl underline decoration-blue-800 underline-offset-4">Resume</div>
+                <div class="mx-auto max-w-3xl flex gap-8">
+                    <div class="flex items-center">
+                        <img src="media/icons/download.svg" alt="Download" class="hidden md:block w-32">
+                    </div>
+                    <div class="hidden md:block border-r border-slate-800"></div>
+                    <div class="w-full flex flex-col gap-8 md:gap-4">
+                        <div class="flex flex-col gap-2">
+                            <span class="font-bold">Want to learn more?</span>
+                            <div class="text-orange-50/80 text-justify">
+                                Feel free to download my resume for an in-depth look at
+                                my work experience, education, personal projects,
+                                and more details on what I contributed to each project listed in my portfolio.
+                            </div>
+                        </div>
+                        <div class="text-center md:text-left">
+                            <a href="https://drive.google.com/file/d/1XblSjxwE0XCW6QzaJLsUMzFQUzO6Bx54/view" target="_blank"
+                               class="px-2 py-1 rounded-lg hover:bg-blue-800 border border-blue-800">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="flex flex-col gap-12">
+                <div class="text-center text-3xl underline decoration-blue-800 underline-offset-4">Get in Touch</div>
+                <div class="flex gap-4 md:gap-8 justify-center text-sm md:text-base text-center text-nowrap">
+                    <a href="https://github.com/martinsomer" target="_blank" class="flex flex-col gap-2 group">
+                        <img src="media/icons/github.svg" alt="GitHub" class="mx-auto w-8 sm:w-12">
+                        <div class="px-2 py-1 rounded-lg border border-transparent group-hover:border-blue-800">GitHub</div>
+                    </a>
+                    <div class="border-r border-slate-800"></div>
+                    <a href="https://www.linkedin.com/in/martin-s%C3%B5mer-00218a303" target="_blank" class="flex flex-col gap-2 group">
+                        <img src="media/icons/linkedin.svg" alt="LinkedIn" class="mx-auto w-8 sm:w-12">
+                        <div class="px-2 py-1 rounded-lg border border-transparent group-hover:border-blue-800">LinkedIn</div>
+                    </a>
+                    <div class="border-r border-slate-800"></div>
+                    <a href="mailto:martinsom35@gmail.com" target="_blank" class="flex flex-col gap-2 group">
+                        <img src="media/icons/email.svg" alt="Email" class="mx-auto w-8 sm:w-12">
+                        <div class="px-2 py-1 rounded-lg border border-transparent group-hover:border-blue-800">E-mail</div>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </body>
+    <footer class="p-4 bg-slate-900 border-t border-slate-800">
+        <div class="mx-auto max-w-5xl flex justify-between text-sm text-orange-50/80">
+            <div>&copy; Martin <span id="year"></span></div>
+            <div>Local time: <span id="time"></span></div>
+        </div>
+    </footer>
+</html>

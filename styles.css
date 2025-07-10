@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Readex';
+    font-style: normal;
+    font-weight: 160 700;
+    font-display: swap;
+    src: url('media/fonts/readex.ttf') format('truetype');
+}
+
+:root {
+    --scroll-offset: 0px;
+}
+
+* {
+    transition: all 200ms ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Readex', sans-serif;
+}
+
+section {
+    scroll-margin: var(--scroll-offset, 0);
+}
